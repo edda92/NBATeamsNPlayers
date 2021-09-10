@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NBA Teams and Players</string>
+    <string name="alert_title">Error</string>
+    <string name="alert_message">Ops! some error happened! Check the logs :)</string>
+    <string name="alert_button">OK</string>
+    <string name="title_player_detail">Player detail</string>
+    <string name="title_players">Players</string>
+    <string name="title_teams">Teams</string>
+</resources>
