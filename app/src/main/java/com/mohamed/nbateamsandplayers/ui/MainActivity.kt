@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity(), BaseAbstractFragment.OnBaseInteraction
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    override fun onContextItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             android.R.id.home -> {
                 onBackPressed()
                 return true
             }
-            else -> return super.onContextItemSelected(item)
+            else -> return super.onOptionsItemSelected(item)
 
         }
     }
