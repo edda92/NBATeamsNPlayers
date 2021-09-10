@@ -37,7 +37,16 @@ class PlayersFragment : BaseAbstractFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        idTeam = arguments?.getLong(EXTRA_ID_TEAM, -1) ?: -1L
+        savedInstanceState?.let {
+            idTeam = it.getLong(EXTRA_ID_TEAM, -1)
+        } ?: kotlin.run {
+            idTeam = arguments?.getLong(EXTRA_ID_TEAM, -1) ?: -1L
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putLong(EXTRA_ID_TEAM, idTeam)
+        super.onSaveInstanceState(outState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

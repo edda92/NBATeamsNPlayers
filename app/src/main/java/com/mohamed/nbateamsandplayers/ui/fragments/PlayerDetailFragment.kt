@@ -29,9 +29,18 @@ class PlayerDetailFragment : BaseAbstractFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        idPlayer = arguments?.getLong(EXTRA_ID_PLAYER, -1) ?: -1L
+        savedInstanceState?.let {
+            idPlayer = it.getLong(EXTRA_ID_PLAYER, -1)
+        } ?: kotlin.run {
+            idPlayer = arguments?.getLong(EXTRA_ID_PLAYER, -1) ?: -1L
+        }
         initData()
         setTitle(resources.getString(R.string.title_player_detail))
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putLong(EXTRA_ID_PLAYER, idPlayer)
+        super.onSaveInstanceState(outState)
     }
 
     override fun showEmptyList() {
