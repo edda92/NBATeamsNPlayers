@@ -1,3 +1,8 @@
+Personal note:
+
+The Players list show all the players retrieved from the API https://free-nba.p.rapidapi.com/players,
+the
+
 ------------------------------------------------------------------------
 Hi,
 you’re going to do an application. Awesome, right?
@@ -21,7 +26,7 @@ big application
 - Please use the Navigation component.
 - We don’t love third party frameworks.
 - We prefer Koin/Dagger for dependency injection.
-- We love UnitTest
+- We love UnitTest [Not done yet for lack of time]
 - We love clean code
 Work on a local repository and commit as often as you can
 When the work is done, you can upload the project on a git
