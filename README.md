@@ -1,7 +1,8 @@
 Personal note:
+--------------
 
-The Players list show all the players retrieved from the API https://free-nba.p.rapidapi.com/players,
-the
+The Players list fragment shows all the players retrieved from the API https://free-nba.p.rapidapi.com/players,
+the API can't filter for idTeam.
 
 ------------------------------------------------------------------------
 Hi,
