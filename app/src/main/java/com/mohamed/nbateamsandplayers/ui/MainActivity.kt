@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity(), BaseAbstractFragment.OnBaseInteraction
     }
 
     override fun showErrorDialog(title: String?, message: String?) {
-        MaterialAlertDialogBuilder(applicationContext)
+        MaterialAlertDialogBuilder(this)
             .setTitle(title ?: getString(R.string.alert_title))
             .setMessage(message ?: getString(R.string.alert_message))
             .setNeutralButton(R.string.alert_button) {
