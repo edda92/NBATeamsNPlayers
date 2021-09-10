@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent_white">#8FFFFFFF</color>
+    <color name="red_400">#ff1744</color>
+    <color name="pink_400">#f50057</color>
+    <color name="purple_400">#d500f9</color>
+    <color name="yellow_400">#ff9100</color>
+    <color name="orange_400">#ff3d00</color>
 </resources>
